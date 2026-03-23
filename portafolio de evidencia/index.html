@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Digital</title>
+<link rel="stylesheet" href="portafolio.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h1>Guadalupe Medina Garcia</h1>
+
+    <div class="botonesHeader">
+        <button id="btnInicio" onclick="inicio()" style="display: none;">Inicio</button>
+        <button id="btnEntrar" onclick="entrar()">Entrar</button>
+    </div>
+</header>
+
+<!-- PORTADA -->
+<section id="portada" class="portada">
+    <div class="banner">
+        <div class="texto">
+        </div>
+        <img src="portada.png" alt="portada">
+    </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section id="portafolio" class="oculto">
+
+    <nav class="menu">
+        <button onclick="mostrarSeccion('sobreMi')">Quién soy</button>
+        <button onclick="mostrarSeccion('formacion')">Formación profesional</button>
+        <button onclick="mostrarSeccion('experiencias')">Experiencias</button>
+        <button onclick="mostrarSeccion('certificados')">Certificados</button>
+        <button onclick="mostrarSeccion('tesis')">Apartado de tesis</button>
+    </nav>
+
+    <main>
+
+     <!-- SOBRE MI -->
+ <section id="sobreMi" class="seccion">
+     <h2>Quién soy</h2>
+
+    <div class="perfil">
+    <img src="yo.png" class="fotoPerfil" alt="Foto de Guadalupe Medina Garcia">
+
+    <div class="textoPerfil">
+    <p><b>Guadalupe Medina Garcia</b></p>
+
+     <p>
+      Soy una persona responsable con muchas ganas de aprender y superarme, 
+      me caracterizo por mi compromiso y disposición para escuchar y seguir indicaciones. 
+      Me adapto con facilidad a nuevos entornos y disfruto trabajar en equipo.
+     </p>
+     </div>
+     </div>
+
+    <div class="tarjetas">
+     <div class="card">
+    <h3>Hobbies</h3>
+     <ul>
+        <li>Leer</li>
+        <li>Escuchar música</li>
+        <li>Aprender nuevas tecnologías</li>
+        <li>Fotografía</li>
+        <li>Jugar juegos</li>
+    </ul>
+    </div>
+
+<div class="card">
+    <h3>Pasatiempos</h3>
+     <ul>
+        <li>Ver películas</li>
+        <li>Practicar un deporte</li>
+        <li>El ciclismo</li>
+        <li>Salir con amigos</li>
+    </ul>
+</div>
+
+    <div class="card">
+        <h3>Habilidades</h3>
+    <ul>
+        <li>Manejo de Office</li>
+        <li>Soporte técnico básico</li>
+        <li>Trabajar en equipo</li>
+        <li>Aprender rápido</li>
+    </ul>
+        </div>
+        </div>
+        </section>
+
+    <!-- FORMACION -->
+<section id="formacion" class="seccion">
+    <h2>Formación profesional</h2>
+
+<div class="formacionItem">
+    <img src="utc.webp" class="logoFormacion" alt="Logo Universidad Tres Culturas">
+
+    <p>
+        <b>Universidad Tres Culturas Chalco</b><br>
+           Estudiante de licenciatura en Ingeniería en Sistemas Computacionales
+    </p>
+</div>
+
+    <div class="formacionItem">
+        <img src="cbt.png" class="logoFormacion" alt="Logo CBT">
+
+        <p>
+            <b>Bachillerato CBT Juan de Dios Bátiz, Valle de Chalco Solidaridad</b><br>
+            Carrera Técnica en Informática
+        </p>
+    </div>
+</section>
+
+    <!-- EXPERIENCIAS -->
+<section id="experiencias" class="seccion">
+    <h2>Experiencias</h2>
+
+    <div class="experienciaItem">
+        <img src="uno.png" class="imgExperiencia" alt="Prácticas de ejecución">
+    <p>
+         <b>Prácticas de ejecución - Escuela Secundaria Frida Kahlo No. 0646</b><br>
+            Uso de herramientas informáticas.
+    </p>
+</div>
+
+    <div class="experienciaItem">
+        <img src="dos.png" class="imgExperiencia" alt="Servicio social">
+    <p>
+        <b>Servicio social - Delegación Jardines de Chalco</b><br>
+         Desarrollo de una base de datos en phpMyAdmin.
+    </p>
+</div>
+
+     <div class="experienciaItem">
+        <img src="tres.png" class="imgExperiencia" alt="Estadías profesionales">
+    <p>
+        <b>Estadías profesionales - Refaccionaria Sprint</b><br>
+        Desarrollo de un sistema de punto de venta.
+    </p>
+</div>
+
+<div class="experienciaItem">
+        <img src="cuatro.png" class="imgExperiencia" alt="Proyecto final">
+    <p>
+        <b>Proyecto final - Universidad Tres Culturas Chalco</b><br>
+        Desarrollo de un historial clínico para personas con diabetes.
+    </p>
+</div>
+
+<div class="experienciaItem">
+        <img src="cinco.png" class="imgExperiencia" alt="Proyecto rector">
+    <p>
+         <b>Proyecto rector - Universidad Tres Culturas Chalco</b><br>
+          Desarrollo de una página web para la cafetería de la universidad.
+    </p>
+    </div>
+</section>
+
+        <!-- CERTIFICADOS -->
+<section id="certificados" class="seccion">
+    <h2>Certificados</h2>
+
+    <div class="contenedorCertificados">
+    <div class="certificado">
+    <img src="bases y conceptos clave de la IA.png" class="imgCert" alt="Certificado IA">
+        <p>Bases y conceptos clave de la IA</p>
+    </div>
+
+        <div class="certificado">
+    <img src="fundamentos analisis de datos.png" class="imgCert" alt="Certificado análisis de datos">
+        <p>Fundamentos del análisis de datos</p>
+    </div>
+
+<div class="certificado">
+     <img src="principios de data science.png" class="imgCert" alt="Certificado data science">
+    <p>Principios de Data Science</p>
+</div>
+
+<div class="certificado">
+    <img src="etica uso responsable de datos.png" class="imgCert" alt="Certificado ética">
+<p>Ética: uso responsable de datos</p>
+    </div>
+
+<div class="certificado">
+    <img src="impacto global de la IA.png" class="imgCert" alt="Certificado impacto global IA">
+<p>Impacto global de la IA</p>
+    </div>
+
+<div class="certificado">
+    <img src="modelo avanzado.png" class="imgCert" alt="Certificado machine learning">
+         <p>Modelos avanzados y aplicaciones prácticas de Machine Learning</p>
+ </div>
+
+<div class="certificado">
+    <img src="aplicacion avanzada.png" class="imgCert" alt="Certificado análisis social">
+<p>Aplicaciones avanzadas y ética en el análisis de datos sociales</p>
+    </div>
+
+<div class="certificado">
+    <img src="lenguaje inteligente.png" class="imgCert" alt="Certificado lenguaje inteligente">
+    <p>Lenguaje inteligente: cómo la IA está cambiando la comunicación</p>
+ </div>
+    </div>
+</section>
+
+        <!-- TESIS -->
+<section id="tesis" class="seccion">
+    <h2>Gestión de inventario para la alquiladora de eventos Don Beto's</h2>
+
+<div class="contenedorProyecto">
+    <div class="proyecto">
+    <img src="android studio.webp" class="imgProyecto" alt="Android Studio">
+<p>
+    Se utilizará el programa Android Studio para programar y crear una aplicación
+    que permita llevar el registro de clientes y productos.
+    </p>
+</div>
+
+<div class="proyecto">
+    <img src="firebase.webp" class="imgProyecto" alt="Firebase">
+    <p>
+     Se tomará en cuenta Firebase como base de datos para almacenar toda la información.
+    </p>
+</div>
+
+<div class="proyecto">
+    <img src="kotlin.webp" class="imgProyecto" alt="Kotlin">
+     <p>
+        El lenguaje Kotlin se implementará para programar la aplicación,
+        aunque también irá de la mano con Java.
+      </p>
+    </div>
+      </div>
+    </section>
+
+    </main>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>©2026 Guadalupe Medina Garcia - Portafolio académico</p>
+</footer>
+
+<script>
+function entrar(){
+    document.getElementById("portada").style.display = "none";
+    document.getElementById("portafolio").style.display = "block";
+
+    /* ocultar botón entrar */
+    document.getElementById("btnEntrar").style.display = "none";
+
+    /* mostrar botón inicio */
+    document.getElementById("btnInicio").style.display = "inline-block";
+
+    mostrarSeccion("sobreMi");
+}
+
+function inicio(){
+    document.getElementById("portada").style.display = "block";
+    document.getElementById("portafolio").style.display = "none";
+
+    /* volver a mostrar botón entrar */
+    document.getElementById("btnEntrar").style.display = "inline-block";
+
+    /* ocultar botón inicio */
+    document.getElementById("btnInicio").style.display = "none";
+}
+
+function mostrarSeccion(id){
+    let secciones = document.querySelectorAll(".seccion");
+
+    secciones.forEach(sec => {
+        sec.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
